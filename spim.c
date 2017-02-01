@@ -49,6 +49,10 @@
 #define termio termios
 #endif
 
+#ifdef __EMX__
+#include <sys/param.h>
+#endif
+
 
 #ifndef WIN32
 #include <sys/time.h>
